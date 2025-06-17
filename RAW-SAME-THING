@@ -1,0 +1,189 @@
+RAW SAME THING SSL/TLS -HTTPS ,HTTP
+
+
+SSL /TLS/https  Certification 
+
+ssl --> Secure Socket Layer it is old process to secure data over Internet --> it you want to convert Latest Version it called TLS (Transport Layer Security) 
+
+TLS is the Latest , to secure the security 
+
+SSL -- OLD 
+TLS - NEW ONE mostly used 
+
+why TLS is used now ??
+
+
+
+HTTP(Hyper Text Transfer protocaol) -- when you login any portal ex: bank portal we give username , passwd  .... so http means destils can e Transfer 
+
+user to bank , may hacker also hack it 
+
+so , that is main reson HTTPS came to reslove the issue (from the user side and bank side date will be Encrypted both sides) 
+
+bank login 
+ we are tranforing the data to bank , we need to check 2 things 
+
+1.Encrypted 
+2. Authentic (bank portal or not ) 
+3. intergrity ( no middle modification done )
+
+this is main reason HTTPS is used 
+
+*** most important HTTPS HOW S will come 
+
+S comes from (TLS or SSL )
+
+When you visit any website you can see HTTPS security (*** in that we can see public Key ) 
+
+what is public keys??
+if you have key --> we can Encrypted the data | if we have key we can Decryted the data 
+note : it should be same key for Encrypted and Decryted  ---> this is called Symmetic Key Encryption 
+single key [ Encrypted done and Decryted done ]  
+
+
+***most important 
+
+we saw website public key , but it is visible , then hacker also see the public Key 
+
+
+****for that before Symmetic we will do  ASymmetic process for Encryption
+ASymmetic --> two keys are involved --> 1.  public key 	
+									    2. private key 
+										
+public key : ex: surya.k9010@gmail.com  --> any one can send mail 
+private key : to read mail's passwd needed private key is passwd 
+
+*** if you want to Encrypted any data we use  ASymmetic (public key ) to Decryted that data we needed ( private key ) this is called ASymmetic key 
+
+summary :
+
+if you use same key  :  Symmetic key Encryption
+
+if you have public private key pair you have we cam use ASymmetic key Encryption for that .
+
+
+now we will see in SSL and TLS how ASymmetic key Encryption how it works ??
+
+Client : search Engine  | server : any website (trainwithshubam.com)
+
+as a clinet from the search Engine we visit (hit) to trainwithshubam.com 
+
+
+Client (broswer)											server 
+
+1. TCP Handshake 
+from the client we are hitting server with my Request  
+1. From server to TCP send Acknowlgemnt ( here Request and Response done )
+
+Note : TCP Handshake rule is : 3 WAYS Handshake 
+
+1. from the TCP Handshake to server :  now we can Establish the connection 
+
+----------------  3 WAYS Handshake is done from the TCP ---------------------------------
+
+										2. Certification Check 
+																				                    
+Client                                                  	server
+
+ 2 . To check the Client(broswer)  Certification check send Request to server 
+ ex: client send "HEELO" TO server 
+ 
+ Now server has public key and private key both 
+ 
+ server send public key as Response to Client  [  This 🔑 public key is 📜 Certificate key  ] 
+ 
+ note : private key is passwd we can't send it .
+ 
+ broswer keep public key (certifiaction key with it ) whixh is send my server 
+ 
+ this will be happens when IT is HTTPS connection IS There it will work ( certifiaction ) 
+ 
+ If HTTP means then --> it show connection is not Secure it will Displayed 
+ 
+ 
+ 
+_________________________________________________________________________________________
+ 
+						         	Key Exchane 
+
+ 
+ Client                                                  	server
+
+
+in the client side key  is created --> Seesion Key  
+
+Session key will maintain (DATA can Transfer + No hacker can Invlove) 
+
+***note :  1. this session key must have Client and Server sides both 
+2. we have public key  in client side   by using public key session will create --> Encrypted data prepared  
+
+3. this Encrypted data pass to Sever
+
+
+from the server side 
+1. server side has Private Key  by using private key --> which is send my client Encrypted data we will Decryted that (session key ) 
+
+summary :  
+
+client : session key encripted data by using public key 
+
+server :   Decryted data by using private key  then we  see Session key 
+
+
+*** Data Transfer with Symmetic Key Encryption
+
+
+_________________________________________________________________________________________
+ 
+						         	Data  Exchane 
+
+ 
+ Client                                                  	server
+ 
+ 
+data will flow both Directions , in this way 3  WAYS Handshake Done Here . 
+
+
+
+how to get ssl Certificate 
+
+
+we have crested any website http --> go any domain provided serverices 
+
+Let's Encrypt is opensource 
+
+email address: public and private (pair Genarate) 
+
+domain name : suresh.com 
+
+
+
+
+ 
+ 
+ 
+ 
+ 
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+	
