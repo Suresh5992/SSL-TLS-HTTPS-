@@ -44,12 +44,14 @@ Password: Only you can read (private key).
 **✅ SSL/TLS Handshake Process**
 
 **Step 1: TCP 3-Way Handshake**
+
 Establishes initial connection.
 Client → Server: Request
 Server → Client: Acknowledgment
 Connection is Established.
 
 **Step 2: Certificate Exchange**
+
 Flow:
 
 Client (Browser)                  Server (Website)
