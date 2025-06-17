@@ -18,7 +18,7 @@ Integrity: Ensures data is not modified during transfer.
 
 ✅ HTTPS → How the ‘S’ Comes?
 The ‘S’ in HTTPS is provided by SSL/TLS protocols.
-When visiting HTTPS websites, browsers show Certificates containing Public Keys.
+When visiting HTTPS websites, browsers show Certificates containing Public Keys
 
 
 **✅ Key Encryption Methods**
