@@ -137,7 +137,26 @@ SSL Certificates validate the website’s authenticity and enable encryption.
 
 
 
+**🔄 TLS/SSL Handshake Flow:**
 
+| Step | Client Action                                  | Server Action                                     |
+| ---- | ---------------------------------------------- | ------------------------------------------------- |
+| 1    | Client initiates TCP Handshake                 | Server responds and establishes connection        |
+| 2    | Client sends a "Hello" request to server       | Server sends its **Public Key Certificate**       |
+| 3    | Client generates a **Session Key**             | Server decrypts the Session Key using Private Key |
+| 4    | Both use the **Session Key for data transfer** | Data is securely transferred using Symmetric Key  |
+| 5    | Secure session continues until closed          | Session is maintained securely                    |
+
+
+
+
+
+8. Explanation:
+TCP Handshake: 3-way handshake to establish connection.
+Certificate Check: Client requests the certificate → server sends its public key (certificate).
+Key Exchange: Client creates a session key, encrypts it using the server’s public key, and sends it to the server.
+Session Establishment: Server decrypts the session key using its private key.
+Data Exchange: Secure data flow starts using Symmetric Key Encryption (fast and efficient).
 
 
 
