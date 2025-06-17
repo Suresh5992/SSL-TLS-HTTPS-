@@ -8,6 +8,7 @@
 
 
 ✅ Why TLS is Used Now?
+
 HTTP is not secure.
 Example: When logging into a bank portal, the username and password can be intercepted by hackers if using HTTP.
 HTTPS (HTTP Secure) ensures:
